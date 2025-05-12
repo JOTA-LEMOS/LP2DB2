@@ -1,0 +1,49 @@
+_+.navbar a, .navbar a:hover, .navbar a:focus {
+  color: rgb(54, 79, 119) !important;
+}
+  .navbar {
+    background-color: black;
+    height: 80px;
+  }
+  .navbar-brand img {
+    height: 110px;
+    width: auto;
+  }
+  .navbar-nav .nav-link {
+    color: rgb(17, 106, 250) !important;
+
+    text-align: center;
+  }
+  .navbar-nav {
+    margin: auto;
+  }
+  .navbar-toggler {
+    border-color: white;
+  }
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+  
+
+header{
+  border-bottom: 5px solid rgb(17, 106, 255) ;
+}
+
+.h1{
+  text-align: center;
+  padding-top:10px;
+}
+
+.section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+.custom-card {
+      margin-bottom: 2rem;
+    }
+.sprint-column {
+      padding-right: 2rem;
+    }
+.endurance-column {
+      padding-left: 2rem;
+    }
