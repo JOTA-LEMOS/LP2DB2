@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+// Verifica se o usuário está logado, assumindo que a variável 'Nome' seja definida após o login bem-sucedido
+if (!isset($_SESSION['Nome'])) {
+    // Se não estiver logado, redireciona para a página de login
+    header("Location: login.html");
+    exit;
+}
 $conn = new mysqli("localhost", "root", "", "gta");
 if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
@@ -67,8 +75,9 @@ $result = $conn->query("SELECT * FROM tbcarros");
             <li class="nav-item"><a class="nav-link" href="cadastro_carro.php">Carros</a></li>
             <li class="nav-item"><a class="nav-link" href="cadastro_equipe.php">Equipes</a></li>
             <li class="nav-item"><a class="nav-link" href="corrida.php">Corrida</a></li>
-          </ul>
-        </div>
+            </ul>
+          <a href="logout.php" class="btn" style="background-color: #052c65; color: #fff;"> Logout</a></div>
+      </div>
       </div>
     </nav>
   </header>
